@@ -1,14 +1,14 @@
 let vitorias = 88
 let derrotas = 28
-let saldoVitorias = ""
 let ranking = ""
 let nickname = "ExeLima"
 
-function calculadoraDoRanking(){
-    saldoVitorias = vitorias - derrotas
+function calcularSaldo(vitorias, derrotas) {
+    return vitorias - derrotas
 }
 
-calculadoraDoRanking()
+let saldoVitorias = calcularSaldo(88, 28)
+
 
 if (saldoVitorias <= 10) ranking = "Ferro"
 else if (saldoVitorias >= 11 && saldoVitorias < 20) ranking = "Bronze"
